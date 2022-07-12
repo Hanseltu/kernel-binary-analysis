@@ -1,0 +1,291 @@
+digraph code {
+	graph [bgcolor=azure,
+		fontname=Courier,
+		fontsize=8,
+		name=code,
+		splines=ortho
+	];
+	node [fillcolor=gray,
+		fontname=Courier,
+		shape=box,
+		style=filled
+	];
+	edge [arrowhead=normal];
+	"0xffffffff810b9440"	 [URL="sym.__x64_sys_setpriority/0xffffffff810b9440",
+		color=black,
+		fillcolor=red,
+		label="/ (fcn) sym.__x64_sys_setpriority 601\l|   sym.__x64_sys_setpriority ();\l| ; var int local_38h @ rbp-0x38\l| ; var int local_30h @ \
+rbp-0x30\l| 0xffffffff810b9440      call sym.__fentry\l| 0xffffffff810b9445      push rbp\l| 0xffffffff810b9446      mov rax, -0x16\l| \
+0xffffffff810b944d      mov rbp, rsp\l| 0xffffffff810b9450      push r15\l| 0xffffffff810b9452      push r14\l| 0xffffffff810b9454      \
+push r13\l| 0xffffffff810b9456      push r12\l| 0xffffffff810b9458      push rbx\l| 0xffffffff810b9459      mov r15, qword gs:[0x16bc0]\l| \
+0xffffffff810b9462      sub rsp, 0x10\l| 0xffffffff810b9466      mov r14, qword [rdi + 0x70]\l| 0xffffffff810b946a      cmp r14d, \
+2\l| 0xffffffff810b946e      ja 0xffffffff810b94d2\l"];
+	"0xffffffff810b94d2"	 [URL="sym.__x64_sys_setpriority/0xffffffff810b94d2",
+		color=black,
+		fillcolor=red,
+		label="| 0xffffffff810b94d2      add rsp, 0x10\l| 0xffffffff810b94d6      pop rbx\l| 0xffffffff810b94d7      pop r12\l| 0xffffffff810b94d9      \
+pop r13\l| 0xffffffff810b94db      pop r14\l| 0xffffffff810b94dd      pop r15\l| 0xffffffff810b94df      pop rbp\l| 0xffffffff810b94e0      \
+ret\l"];
+	"0xffffffff810b9440" -> "0xffffffff810b94d2" [key=0,
+	color="#007f00"];
+"0xffffffff810b9470" [URL="sym.__x64_sys_setpriority/0xffffffff810b9470",
+	color=black,
+	fillcolor=red,
+	label="| 0xffffffff810b9470      mov r12, qword [rdi + 0x60]\l| 0xffffffff810b9474      mov eax, 0x13\l| 0xffffffff810b9479      mov rbx, \
+qword [rdi + 0x68]\l| 0xffffffff810b947d      mov r13, qword [r15 + 0xa68]\l| 0xffffffff810b9484      cmp r12d, 0x13\l| 0xffffffff810b9488      \
+cmovg r12d, eax\l| 0xffffffff810b948c      mov eax, 0xffffffec\l| 0xffffffff810b9491      cmp r12d, 0xec\l| 0xffffffff810b9495      \
+cmovl r12d, eax\l| 0xffffffff810b9499      mov rdi, -0x7d9faf80\l| 0xffffffff810b94a0      call sym._raw_read_lock\l| 0xffffffff810b94a5      \
+cmp r14d, 1\l| 0xffffffff810b94a9      je 0xffffffff810b94e1\l"];
+"0xffffffff810b9440" -> "0xffffffff810b9470" [key=0,
+color="#7f0000"];
+"0xffffffff810b94e1" [URL="sym.__x64_sys_setpriority/0xffffffff810b94e1",
+color=black,
+label="| 0xffffffff810b94e1      test ebx, ebx\l| 0xffffffff810b94e3      jne 0xffffffff810b968d\l"];
+"0xffffffff810b9470" -> "0xffffffff810b94e1" [key=0,
+color="#007f00"];
+"0xffffffff810b94ab" [URL="sym.__x64_sys_setpriority/0xffffffff810b94ab",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b94ab      cmp r14d, 2\l| 0xffffffff810b94af      je 0xffffffff810b959d\l"];
+"0xffffffff810b9470" -> "0xffffffff810b94ab" [key=0,
+color="#7f0000"];
+"0xffffffff810b968d" [URL="sym.__x64_sys_setpriority/0xffffffff810b968d",
+color=black,
+label="| 0xffffffff810b968d      mov edi, ebx\l| 0xffffffff810b968f      call sym.find_vpid\l\\ 0xffffffff810b9694      jmp 0xffffffff810b94f7\l"];
+"0xffffffff810b94e1" -> "0xffffffff810b968d" [key=0,
+color="#007f00"];
+"0xffffffff810b94e9" [URL="sym.__x64_sys_setpriority/0xffffffff810b94e9",
+color=black,
+label="| 0xffffffff810b94e9      mov rax, qword [r15 + 0xad0]\l| 0xffffffff810b94f0      mov rax, qword [rax + 0x170]\l"];
+"0xffffffff810b94e1" -> "0xffffffff810b94e9" [key=0,
+color="#7f0000"];
+"0xffffffff810b959d" [URL="sym.__x64_sys_setpriority/0xffffffff810b959d",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b959d      mov rdi, qword [r13 + 0x88]\l| 0xffffffff810b95a4      mov esi, ebx\l| 0xffffffff810b95a6      call sym.make_\
+kuid\l| 0xffffffff810b95ab      mov rcx, qword [r13 + 0x80]\l| 0xffffffff810b95b2      test ebx, ebx\l| 0xffffffff810b95b4      \
+mov qword [local_38h], rcx\l| 0xffffffff810b95b8      jne 0xffffffff810b9658\l"];
+"0xffffffff810b94ab" -> "0xffffffff810b959d" [key=0,
+color="#007f00"];
+"0xffffffff810b94b5" [URL="sym.__x64_sys_setpriority/0xffffffff810b94b5",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b94b5      test r14d, r14d\l| 0xffffffff810b94b8      je 0xffffffff810b9575\l"];
+"0xffffffff810b94ab" -> "0xffffffff810b94b5" [key=0,
+color="#7f0000"];
+"0xffffffff810b9658" [URL="sym.__x64_sys_setpriority/0xffffffff810b9658",
+color=black,
+label="| 0xffffffff810b9658      cmp dword [r13 + 4], eax\l| 0xffffffff810b965c      mov r14d, eax\l| 0xffffffff810b965f      je 0xffffffff810b95c2\l"];
+"0xffffffff810b959d" -> "0xffffffff810b9658" [key=0,
+color="#007f00"];
+"0xffffffff810b95be" [URL="sym.__x64_sys_setpriority/0xffffffff810b95be",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b95be      mov r14d, dword [r13 + 4]\l"];
+"0xffffffff810b959d" -> "0xffffffff810b95be" [key=0,
+color="#7f0000"];
+"0xffffffff810b9575" [URL="sym.__x64_sys_setpriority/0xffffffff810b9575",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b9575      test ebx, ebx\l| 0xffffffff810b9577      jne 0xffffffff810b967e\l"];
+"0xffffffff810b94b5" -> "0xffffffff810b9575" [key=0,
+color="#007f00"];
+"0xffffffff810b94be" [URL="sym.__x64_sys_setpriority/0xffffffff810b94be",
+color=black,
+label="| 0xffffffff810b94be      mov rax, -3\l"];
+"0xffffffff810b94b5" -> "0xffffffff810b94be" [key=0,
+color="#7f0000"];
+"0xffffffff810b967e" [URL="sym.__x64_sys_setpriority/0xffffffff810b967e",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b967e      mov edi, ebx\l| 0xffffffff810b9680      call sym.find_task_by_vpid\l| 0xffffffff810b9685      mov r15, \
+rax\l| 0xffffffff810b9688      jmp 0xffffffff810b957d\l"];
+"0xffffffff810b9575" -> "0xffffffff810b967e" [key=0,
+color="#007f00"];
+"0xffffffff810b957d" [URL="sym.__x64_sys_setpriority/0xffffffff810b957d",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b957d      test r15, r15\l| 0xffffffff810b9580      je 0xffffffff810b94be\l"];
+"0xffffffff810b9575" -> "0xffffffff810b957d" [key=0,
+color="#7f0000"];
+"0xffffffff810b94c5" [URL="sym.__x64_sys_setpriority/0xffffffff810b94c5",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b94c5      mov edx, 0xfffffe00\l| 0xffffffff810b94ca      lock xadd dword [obj.tasklist_lock], edx\l"];
+"0xffffffff810b94be" -> "0xffffffff810b94c5" [key=0,
+color="#00007f"];
+"0xffffffff810b94c5" -> "0xffffffff810b94d2" [key=0,
+color="#00007f"];
+"0xffffffff810b94f7" [URL="sym.__x64_sys_setpriority/0xffffffff810b94f7",
+color=black,
+label="| 0xffffffff810b94f7      test rax, rax\l| 0xffffffff810b94fa      je 0xffffffff810b94be\l"];
+"0xffffffff810b968d" -> "0xffffffff810b94f7" [key=0,
+color="#00007f"];
+"0xffffffff810b94e9" -> "0xffffffff810b94f7" [key=0,
+color="#00007f"];
+"0xffffffff810b94f7" -> "0xffffffff810b94be" [key=0,
+color="#007f00"];
+"0xffffffff810b94fc" [URL="sym.__x64_sys_setpriority/0xffffffff810b94fc",
+color=black,
+label="| 0xffffffff810b94fc      mov r13, qword [rax + 0x18]\l| 0xffffffff810b9500      test r13, r13\l| 0xffffffff810b9503      je 0xffffffff810b94be\l"];
+"0xffffffff810b94f7" -> "0xffffffff810b94fc" [key=0,
+color="#7f0000"];
+"0xffffffff810b94fc" -> "0xffffffff810b94be" [key=0,
+color="#007f00"];
+"0xffffffff810b9505" [URL="sym.__x64_sys_setpriority/0xffffffff810b9505",
+color=black,
+label="| 0xffffffff810b9505      sub r13, 0x950\l| 0xffffffff810b950c      je 0xffffffff810b94be\l"];
+"0xffffffff810b94fc" -> "0xffffffff810b9505" [key=0,
+color="#7f0000"];
+"0xffffffff810b9505" -> "0xffffffff810b94be" [key=0,
+color="#007f00"];
+"0xffffffff810b950e" [URL="sym.__x64_sys_setpriority/0xffffffff810b950e",
+color=black,
+label="| 0xffffffff810b950e      mov eax, 0xfffffffd\l"];
+"0xffffffff810b9505" -> "0xffffffff810b950e" [key=0,
+color="#7f0000"];
+"0xffffffff810b9513" [URL="sym.__x64_sys_setpriority/0xffffffff810b9513",
+color=black,
+label="| 0xffffffff810b9513      mov rdx, qword [r13 + 0xad0]\l| 0xffffffff810b951a      mov rcx, qword [rdx + 0x10]\l| 0xffffffff810b951e      \
+add rdx, 0x10\l| 0xffffffff810b9522      cmp rdx, rcx\l| 0xffffffff810b9525      lea rbx, qword [rcx - 0x980]\l| 0xffffffff810b952c      \
+je 0xffffffff810b9559\l"];
+"0xffffffff810b950e" -> "0xffffffff810b9513" [key=0,
+color="#00007f"];
+"0xffffffff810b9559" [URL="sym.__x64_sys_setpriority/0xffffffff810b9559",
+color=black,
+label="| 0xffffffff810b9559      mov r13, qword [r13 + 0x950]\l| 0xffffffff810b9560      test r13, r13\l| 0xffffffff810b9563      je 0xffffffff810b956e\l"];
+"0xffffffff810b9513" -> "0xffffffff810b9559" [key=0,
+color="#007f00"];
+"0xffffffff810b952e" [URL="sym.__x64_sys_setpriority/0xffffffff810b952e",
+color=black,
+label="| 0xffffffff810b952e      mov edx, eax\l| 0xffffffff810b9530      mov esi, r12d\l| 0xffffffff810b9533      mov rdi, rbx\l| 0xffffffff810b9536      \
+call sym.set_one_prio\l| 0xffffffff810b953b      mov rsi, qword [r13 + 0xad0]\l| 0xffffffff810b9542      mov rdx, qword [rbx + 0x980]\l| \
+0xffffffff810b9549      lea rcx, qword [rsi + 0x10]\l| 0xffffffff810b954d      lea rbx, qword [rdx - 0x980]\l| 0xffffffff810b9554      \
+cmp rdx, rcx\l| 0xffffffff810b9557      jne 0xffffffff810b952e\l"];
+"0xffffffff810b9513" -> "0xffffffff810b952e" [key=0,
+color="#7f0000"];
+"0xffffffff810b956e" [URL="sym.__x64_sys_setpriority/0xffffffff810b956e",
+color=black,
+label="| 0xffffffff810b956e      cdqe\l| 0xffffffff810b9570      jmp 0xffffffff810b94c5\l"];
+"0xffffffff810b9559" -> "0xffffffff810b956e" [key=0,
+color="#007f00"];
+"0xffffffff810b9565" [URL="sym.__x64_sys_setpriority/0xffffffff810b9565",
+color=black,
+label="| 0xffffffff810b9565      sub r13, 0x950\l| 0xffffffff810b956c      jne 0xffffffff810b9513\l"];
+"0xffffffff810b9559" -> "0xffffffff810b9565" [key=0,
+color="#7f0000"];
+"0xffffffff810b952e" -> "0xffffffff810b9559" [key=0,
+color="#7f0000"];
+"0xffffffff810b952e" -> "0xffffffff810b952e" [key=0,
+color="#007f00"];
+"0xffffffff810b956e" -> "0xffffffff810b94c5" [key=0,
+color="#00007f"];
+"0xffffffff810b9565" -> "0xffffffff810b9513" [key=0,
+color="#007f00"];
+"0xffffffff810b9565" -> "0xffffffff810b956e" [key=0,
+color="#7f0000"];
+"0xffffffff810b967e" -> "0xffffffff810b957d" [key=0,
+color="#00007f"];
+"0xffffffff810b957d" -> "0xffffffff810b94be" [key=0,
+color="#007f00"];
+"0xffffffff810b9586" [URL="sym.__x64_sys_setpriority/0xffffffff810b9586",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b9586      mov edx, 0xfffffffd\l| 0xffffffff810b958b      mov esi, r12d\l| 0xffffffff810b958e      mov rdi, r15\l| \
+0xffffffff810b9591      call sym.set_one_prio\l| 0xffffffff810b9596      cdqe\l| 0xffffffff810b9598      jmp 0xffffffff810b94c5\l"];
+"0xffffffff810b957d" -> "0xffffffff810b9586" [key=0,
+color="#7f0000"];
+"0xffffffff810b9586" -> "0xffffffff810b94c5" [key=0,
+color="#00007f"];
+"0xffffffff810b95c2" [URL="sym.__x64_sys_setpriority/0xffffffff810b95c2",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b95c2      mov dword [local_30h], 0xfffffffd\l| 0xffffffff810b95c9      mov rax, -0x7d9ec880\l"];
+"0xffffffff810b9658" -> "0xffffffff810b95c2" [key=0,
+color="#007f00"];
+"0xffffffff810b9665" [URL="sym.__x64_sys_setpriority/0xffffffff810b9665",
+color=black,
+label="| 0xffffffff810b9665      mov edi, eax\l| 0xffffffff810b9667      call sym.find_user\l| 0xffffffff810b966c      test rax, rax\l| \
+0xffffffff810b966f      mov qword [local_38h], rax\l| 0xffffffff810b9673      jne 0xffffffff810b95c2\l"];
+"0xffffffff810b9658" -> "0xffffffff810b9665" [key=0,
+color="#7f0000"];
+"0xffffffff810b95be" -> "0xffffffff810b95c2" [key=0,
+color="#00007f"];
+"0xffffffff810b95d0" [URL="sym.__x64_sys_setpriority/0xffffffff810b95d0",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b95d0      mov r8, qword [rax + 0x7c0]\l| 0xffffffff810b95d7      lea r15, qword [r8 - 0x7c0]\l| 0xffffffff810b95de      \
+cmp r15, -0x7d9ec880\l| 0xffffffff810b95e5      je 0xffffffff810b9634\l"];
+"0xffffffff810b95c2" -> "0xffffffff810b95d0" [key=0,
+color="#00007f"];
+"0xffffffff810b9634" [URL="sym.__x64_sys_setpriority/0xffffffff810b9634",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b9634      cmp dword [r13 + 4], r14d\l| 0xffffffff810b9638      movsxd rax, dword [local_30h]\l| 0xffffffff810b963c      \
+je 0xffffffff810b94c5\l"];
+"0xffffffff810b95d0" -> "0xffffffff810b9634" [key=0,
+color="#007f00"];
+"0xffffffff810b95e7" [URL="sym.__x64_sys_setpriority/0xffffffff810b95e7",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b95e7      mov rbx, r15\l| 0xffffffff810b95ea      jmp 0xffffffff810b9602\l"];
+"0xffffffff810b95d0" -> "0xffffffff810b95e7" [key=0,
+color="#7f0000"];
+"0xffffffff810b9634" -> "0xffffffff810b94c5" [key=0,
+color="#007f00"];
+"0xffffffff810b9642" [URL="sym.__x64_sys_setpriority/0xffffffff810b9642",
+color=black,
+fillcolor=red,
+label="| 0xffffffff810b9642      mov rdi, qword [local_38h]\l| 0xffffffff810b9646      mov qword [local_30h], rax\l| 0xffffffff810b964a      \
+call sym.free_uid\l| 0xffffffff810b964f      mov rax, qword [local_30h]\l| 0xffffffff810b9653      jmp 0xffffffff810b94c5\l"];
+"0xffffffff810b9634" -> "0xffffffff810b9642" [key=0,
+color="#7f0000"];
+"0xffffffff810b9602" [URL="sym.__x64_sys_setpriority/0xffffffff810b9602",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b9602      mov rdx, qword [rbx + 0xa60]\l| 0xffffffff810b9609      mov edx, dword [rdx + 4]\l| 0xffffffff810b960c      \
+cmp edx, r14d\l| 0xffffffff810b960f      jne 0xffffffff810b95ec\l"];
+"0xffffffff810b95e7" -> "0xffffffff810b9602" [key=0,
+color="#00007f"];
+"0xffffffff810b95ec" [URL="sym.__x64_sys_setpriority/0xffffffff810b95ec",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b95ec      mov rbx, qword [rbx + 0x970]\l| 0xffffffff810b95f3      sub rbx, 0x970\l| 0xffffffff810b95fa      cmp \
+rbx, r15\l| 0xffffffff810b95fd      mov rax, rbx\l| 0xffffffff810b9600      je 0xffffffff810b95d0\l"];
+"0xffffffff810b9602" -> "0xffffffff810b95ec" [key=0,
+color="#007f00"];
+"0xffffffff810b9611" [URL="sym.__x64_sys_setpriority/0xffffffff810b9611",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b9611      xor edx, edx\l| 0xffffffff810b9613      xor esi, esi\l| 0xffffffff810b9615      mov rdi, rbx\l| 0xffffffff810b9618      \
+call sym.__task_pid_nr_ns\l| 0xffffffff810b961d      test eax, eax\l| 0xffffffff810b961f      je 0xffffffff810b95ec\l"];
+"0xffffffff810b9602" -> "0xffffffff810b9611" [key=0,
+color="#7f0000"];
+"0xffffffff810b95ec" -> "0xffffffff810b95d0" [key=0,
+color="#007f00"];
+"0xffffffff810b95ec" -> "0xffffffff810b9602" [key=0,
+color="#7f0000"];
+"0xffffffff810b9611" -> "0xffffffff810b95ec" [key=0,
+color="#007f00"];
+"0xffffffff810b9621" [URL="sym.__x64_sys_setpriority/0xffffffff810b9621",
+color=black,
+fillcolor=palegreen,
+label="| 0xffffffff810b9621      mov edx, dword [local_30h]\l| 0xffffffff810b9624      mov esi, r12d\l| 0xffffffff810b9627      mov rdi, \
+rbx\l| 0xffffffff810b962a      call sym.set_one_prio\l| 0xffffffff810b962f      mov dword [local_30h], eax\l| 0xffffffff810b9632      \
+jmp 0xffffffff810b95ec\l"];
+"0xffffffff810b9611" -> "0xffffffff810b9621" [key=0,
+color="#7f0000"];
+"0xffffffff810b9621" -> "0xffffffff810b95ec" [key=0,
+color="#00007f"];
+"0xffffffff810b9642" -> "0xffffffff810b94c5" [key=0,
+color="#00007f"];
+"0xffffffff810b9665" -> "0xffffffff810b95c2" [key=0,
+color="#007f00"];
+"0xffffffff810b9679" [URL="sym.__x64_sys_setpriority/0xffffffff810b9679",
+color=black,
+label="| 0xffffffff810b9679      jmp 0xffffffff810b94be\l"];
+"0xffffffff810b9665" -> "0xffffffff810b9679" [key=0,
+color="#7f0000"];
+"0xffffffff810b9679" -> "0xffffffff810b94be" [key=0,
+color="#00007f"];
+}
